@@ -82,7 +82,7 @@ chmod 0755 uploads && sudo chown -R daemon:daemon uploads
 
 Push to production:
 ```
-zip -r ../airtel_packages.zip . -x "uploads/*" -x "*.DS_Store" -x "README.md" -x ".gitignore" -x ".git/*"
+zip -r ../corpsec.zip . -x "uploads/*" -x "*.DS_Store" -x "README.md" -x ".gitignore" -x ".git/*"
 ```
 
 Run the following SQL to re-run DB values:
