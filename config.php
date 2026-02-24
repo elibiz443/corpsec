@@ -7,19 +7,15 @@ $isHttps = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ||
   (isset($_SERVER['SERVER_PORT']) && (int)$_SERVER['SERVER_PORT'] === 443);
 
 $scheme = $isHttps ? 'https' : 'http';
+$isLocal = in_array($hostName, ['localhost', '127.0.0.1'], true);
 
 if (!defined('ROOT_PATH')) {
   define('ROOT_PATH', str_replace('\\', '/', __DIR__));
 }
 
 if (!defined('ROOT_URL')) {
-  $docRoot = str_replace('\\', '/', $_SERVER['DOCUMENT_ROOT']);
-  $urlPath = str_replace($docRoot, '', ROOT_PATH);
-  $urlPath = ltrim($urlPath, '/');
-  define('ROOT_URL', $scheme . '://' . $hostName . ($urlPath ? '/' . $urlPath : ''));
+  define('ROOT_URL', $isLocal ? 'http://localhost/corpsec' : 'https://corpsec.africa');
 }
-
-$isLocal = in_array($hostName, ['localhost', '127.0.0.1'], true);
 
 ini_set('display_errors', $isLocal ? '1' : '0');
 ini_set('display_startup_errors', $isLocal ? '1' : '0');
@@ -38,12 +34,14 @@ if (session_status() !== PHP_SESSION_ACTIVE) {
   session_start();
 }
 
-$dbHost = getenv('CORPSEC_DB_HOST') ?: 'localhost';
-$dbName = getenv('CORPSEC_DB_NAME') ?: 'corpsec_db';
-$dbUser = getenv('CORPSEC_DB_USER') ?: 'root';
-$dbPass = getenv('CORPSEC_DB_PASS') ?: '';
-
-if (!defined('DB_HOST')) define('DB_HOST', $dbHost);
-if (!defined('DB_NAME')) define('DB_NAME', $dbName);
-if (!defined('DB_USER')) define('DB_USER', $dbUser);
-if (!defined('DB_PASS')) define('DB_PASS', $dbPass);
+if ($isLocal) {
+  if (!defined('DB_HOST')) define('DB_HOST', 'localhost');
+  if (!defined('DB_NAME')) define('DB_NAME', 'corpsec_db');
+  if (!defined('DB_USER')) define('DB_USER', 'root');
+  if (!defined('DB_PASS')) define('DB_PASS', '');
+} else {
+  if (!defined('DB_HOST')) define('DB_HOST', 'localhost');
+  if (!defined('DB_NAME')) define('DB_NAME', 'corpseca_main');
+  if (!defined('DB_USER')) define('DB_USER', 'corpseca_main');
+  if (!defined('DB_PASS')) define('DB_PASS', 'XGtRwruQXHRtKKtfkrBe');
+}
