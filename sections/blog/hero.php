@@ -1,0 +1,19 @@
+<section class="mx-auto max-w-6xl px-5 pb-10 pt-14 md:pb-14 md:pt-20">
+  <div class="grid gap-8 md:grid-cols-12 md:gap-10">
+    <div class="md:col-span-7">
+      <div class="inline-flex items-center gap-2 rounded-full bg-white/5 px-3 py-1 text-xs text-white/70 ring-1 ring-white/10">
+        <span class="h-1.5 w-1.5 rounded-full bg-brand-300"></span>
+        Insights
+      </div>
+      <h1 class="mt-6 font-display text-4xl font-semibold leading-[1.05] tracking-tight md:text-5xl">Practical guidance for investigations and protection.</h1>
+      <p class="mt-4 text-base leading-relaxed text-white/70">Short, useful reads for leaders who need confidentiality, discipline, and real-world security outcomes.</p>
+    </div>
+    <div class="md:col-span-5">
+      <div class="rounded-[2.5rem] bg-white/5 p-7 ring-1 ring-white/10">
+        <div class="text-sm font-semibold">Need help now?</div>
+        <p class="mt-2 text-sm text-white/70">Request a consultation and we will respond quickly with a proposed plan.</p>
+        <button type="button" data-open-request class="cursor-pointer mt-10 inline-flex w-full items-center justify-center rounded-2xl bg-brand-300 px-5 py-3 text-sm font-semibold text-zinc-950 transition hover:-translate-y-0.5 hover:bg-brand-200 active:translate-y-0">Request consultation</button>
+      </div>
+    </div>
+  </div>
+</section>

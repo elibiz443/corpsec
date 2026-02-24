@@ -5,5 +5,12 @@ RewriteCond %{REQUEST_FILENAME} -f [OR]
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^ - [L]
 
-RewriteRule ^auth/login$ admin/views/auth/login.php [L,QSA]
+RewriteRule ^about$ pages/about.php [L,QSA]
+RewriteRule ^investigations$ pages/investigations.php [L,QSA]
+RewriteRule ^guarding$ pages/guarding.php [L,QSA]
+RewriteRule ^insights$ pages/blog.php [L,QSA]
+RewriteRule ^contact$ pages/contact.php [L,QSA]
+RewriteRule ^services$ pages/services.php [L,QSA]
+
+RewriteRule ^admin/login$ admin/login.php [L,QSA]
 RewriteRule ^dashboard$ admin/views/dashboard/index.php [L,QSA]
