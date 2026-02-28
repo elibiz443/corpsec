@@ -87,8 +87,15 @@ function db_init(PDO $pdo): void {
     subject VARCHAR(190) NOT NULL DEFAULT '',
     message_text LONGTEXT NOT NULL,
     meta_json LONGTEXT NOT NULL DEFAULT '',
+    status VARCHAR(30) NOT NULL DEFAULT 'new',
+    admin_notes LONGTEXT NOT NULL DEFAULT '',
+    updated_at DATETIME NULL,
     created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
   ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;");
+
+  try { $pdo->exec("ALTER TABLE inquiries ADD COLUMN status VARCHAR(30) NOT NULL DEFAULT 'new'"); } catch (Throwable $e) {}
+  try { $pdo->exec("ALTER TABLE inquiries ADD COLUMN admin_notes LONGTEXT NOT NULL DEFAULT ''"); } catch (Throwable $e) {}
+  try { $pdo->exec("ALTER TABLE inquiries ADD COLUMN updated_at DATETIME NULL"); } catch (Throwable $e) {}
 
   $pdo->exec("CREATE TABLE IF NOT EXISTS media (
     id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,

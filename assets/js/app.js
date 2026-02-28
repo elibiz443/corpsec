@@ -177,10 +177,10 @@ $$('[data-tabs]').forEach(root => {
     buttons.forEach(b => {
       const isOn = b.dataset.tab === key
       b.classList.toggle('bg-white', isOn)
-      b.classList.toggle('text-zinc-950', isOn)
       b.classList.toggle('shadow-sm', isOn)
-      b.classList.toggle('text-white/60', !isOn)
-      b.classList.toggle('text-white', !isOn)
+      b.classList.toggle('text-zinc-900', isOn)
+      b.classList.toggle('text-zinc-600', !isOn)
+      if (!isOn) b.classList.remove('bg-white', 'shadow-sm', 'text-zinc-900')
     })
     panels.forEach(p => p.classList.toggle('hidden', p.dataset.panel !== key))
   }
@@ -234,9 +234,10 @@ $$('[data-carousel]').forEach(root => {
     track.style.transform = `translate3d(${-idx * 100}%, 0, 0)`
     dots.forEach(d => {
       const on = parseInt(d.dataset.carouselDot || '0', 10) === idx
-      d.classList.toggle('bg-white/80', on)
-      d.classList.toggle('bg-white/20', !on)
-      d.classList.toggle('shadow-[0_0_25px_rgba(255,255,255,.25)]', on)
+      d.classList.toggle('bg-sky-500', on)
+      d.classList.toggle('bg-sky-200', !on)
+      d.classList.toggle('ring-2', on)
+      d.classList.toggle('ring-sky-200/60', on)
     })
   }
 
@@ -284,15 +285,17 @@ if (radarEls.length) {
 
 $$('[data-rich]').forEach(root => {
   const set = (sel, cls) => $$(sel, root).forEach(el => el.classList.add(...cls.split(' ')))
-  root.classList.add('text-white/80')
-  set('h1', 'font-display text-3xl md:text-4xl font-semibold tracking-tight text-white mt-2')
-  set('h2', 'font-display text-2xl md:text-3xl font-semibold tracking-tight text-white mt-8')
-  set('h3', 'font-display text-xl md:text-2xl font-semibold tracking-tight text-white mt-6')
+  root.classList.add('text-zinc-700')
+  
+  set('h1', `font-['Sora',ui-sans-serif,system-ui] text-3xl md:text-4xl font-semibold tracking-tight text-zinc-900 mt-2`)
+  set('h2', `font-['Sora',ui-sans-serif,system-ui] text-2xl md:text-3xl font-semibold tracking-tight text-zinc-900 mt-8`)
+  set('h3', `font-['Sora',ui-sans-serif,system-ui] text-xl md:text-2xl font-semibold tracking-tight text-zinc-900 mt-6`)
+  
   set('p', 'mt-4 text-sm md:text-base leading-relaxed')
   set('ul', 'mt-4 list-disc pl-6 space-y-2')
   set('ol', 'mt-4 list-decimal pl-6 space-y-2')
   set('li', 'text-sm md:text-base leading-relaxed')
-  set('a', 'text-brand-200 font-semibold underline decoration-white/20 underline-offset-4 hover:text-white')
-  set('blockquote', 'mt-6 rounded-3xl bg-zinc-950/40 p-6 ring-1 ring-white/10 text-white/80')
-  set('strong', 'text-white font-semibold')
+  set('a', 'text-sky-700 font-semibold underline decoration-sky-200 underline-offset-4 hover:text-indigo-700')
+  set('blockquote', 'mt-6 rounded-3xl bg-sky-50 p-6 ring-1 ring-sky-200/60 text-zinc-700')
+  set('strong', 'text-zinc-900 font-semibold')
 })

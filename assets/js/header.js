@@ -53,12 +53,12 @@ document.addEventListener('DOMContentLoaded', () => {
       if (headerContainer.classList.contains('py-5')) headerContainer.classList.replace('py-5', 'py-2')
       else headerContainer.classList.add('py-2')
       headerContainer.classList.remove('py-5')
-      mainHeader.classList.add('shadow-2xl', 'bg-zinc-900/80')
+      mainHeader.classList.add('shadow-xl', 'bg-white/90')
     } else {
       if (headerContainer.classList.contains('py-2')) headerContainer.classList.replace('py-2', 'py-5')
       else headerContainer.classList.add('py-5')
       headerContainer.classList.remove('py-2')
-      mainHeader.classList.remove('shadow-2xl', 'bg-zinc-900/80')
+      mainHeader.classList.remove('shadow-xl', 'bg-white/90')
     }
   }
 

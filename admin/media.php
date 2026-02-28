@@ -61,17 +61,17 @@ $rows = db_all($pdo, 'SELECT * FROM media ORDER BY created_at DESC, id DESC LIMI
 require __DIR__ . '/includes/head.php';
 ?>
 <div class="grid gap-6">
-  <div class="rounded-[2.5rem] bg-white/5 p-7 ring-1 ring-white/10 md:p-10">
+  <div class="rounded-[2.5rem] bg-white p-7 ring-1 ring-black/10 md:p-10">
     <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
       <div>
-        <div class="inline-flex items-center gap-2 rounded-full bg-white/5 px-3 py-1 text-xs text-white/70 ring-1 ring-white/10">
-          <span class="h-1.5 w-1.5 rounded-full bg-brand-300"></span>
+        <div class="inline-flex items-center gap-2 rounded-full bg-white px-3 py-1 text-xs text-zinc-600 ring-1 ring-black/10">
+          <span class="h-1.5 w-1.5 rounded-full bg-sky-300"></span>
           Media
         </div>
-        <h1 class="mt-5 font-display text-3xl font-semibold tracking-tight md:text-4xl">Upload & manage assets</h1>
-        <p class="mt-3 text-sm text-white/70">Upload transparent PNG/WebP assets for icons, team photos, covers, and more.</p>
+        <h1 class="mt-5 font-['Sora',ui-sans-serif,system-ui] text-3xl font-semibold tracking-tight md:text-4xl">Upload & manage assets</h1>
+        <p class="mt-3 text-sm text-zinc-600">Upload transparent PNG/WebP assets for icons, team photos, covers, and more.</p>
       </div>
-      <a href="<?php echo url(''); ?>" class="inline-flex items-center justify-center rounded-full bg-white/5 px-5 py-2.5 text-sm font-semibold text-white/80 ring-1 ring-white/10 transition hover:bg-white/10">View website</a>
+      <a href="<?php echo url(''); ?>" class="inline-flex items-center justify-center rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-zinc-700 ring-1 ring-black/10 transition hover:bg-zinc-50">View website</a>
     </div>
 
     <form method="post" enctype="multipart/form-data" class="mt-8 grid gap-4">
@@ -79,13 +79,13 @@ require __DIR__ . '/includes/head.php';
       <input type="hidden" name="action" value="upload">
       <div class="grid gap-4 md:grid-cols-12">
         <div class="md:col-span-5">
-          <label class="text-xs font-semibold text-white/70">Choose file</label>
-          <input type="file" name="file" accept="image/png,image/jpeg,image/webp" required class="mt-2 w-full rounded-2xl bg-zinc-950/40 px-4 py-2 text-sm text-white ring-1 ring-white/10">
-          <div class="mt-2 text-xs text-white/50">PNG/WebP recommended for transparent backgrounds.</div>
+          <label class="text-xs font-semibold text-zinc-600">Choose file</label>
+          <input type="file" name="file" accept="image/png,image/jpeg,image/webp" required class="mt-2 w-full rounded-2xl bg-zinc-50 px-4 py-2 text-sm text-zinc-900 ring-1 ring-black/10">
+          <div class="mt-2 text-xs text-zinc-500">PNG/WebP recommended for transparent backgrounds.</div>
         </div>
         <div class="md:col-span-5">
-          <label class="text-xs font-semibold text-white/70">Alt text (optional)</label>
-          <input name="alt_text" class="mt-2 w-full rounded-2xl bg-zinc-950/40 px-4 py-3 text-sm text-white ring-1 ring-white/10 focus:outline-none focus:ring-2 focus:ring-brand-300" placeholder="Example: Corpsec verified seal">
+          <label class="text-xs font-semibold text-zinc-600">Alt text (optional)</label>
+          <input name="alt_text" class="mt-2 w-full rounded-2xl bg-zinc-50 px-4 py-3 text-sm text-zinc-900 ring-1 ring-black/10 focus:outline-none focus:ring-2 focus:ring-sky-300" placeholder="Example: Corpsec verified seal">
         </div>
         <div class="md:col-span-2 md:flex md:items-end">
           <button class="w-full rounded-full bg-emerald-300 px-6 py-3 text-sm font-semibold text-zinc-950 transition hover:-translate-y-0.5 hover:bg-emerald-200 active:translate-y-0">Upload</button>
@@ -94,27 +94,27 @@ require __DIR__ . '/includes/head.php';
     </form>
   </div>
 
-  <div class="rounded-[2.5rem] bg-white/5 p-7 ring-1 ring-white/10 md:p-10">
+  <div class="rounded-[2.5rem] bg-white p-7 ring-1 ring-black/10 md:p-10">
     <div class="flex items-end justify-between gap-4">
       <div>
         <div class="text-sm font-semibold">Library</div>
-        <div class="mt-1 text-xs text-white/60"><?php echo count($rows); ?> shown (latest 200)</div>
+        <div class="mt-1 text-xs text-zinc-500"><?php echo count($rows); ?> shown (latest 200)</div>
       </div>
-      <div class="text-xs text-white/50">Path format: uploads/filename.png</div>
+      <div class="text-xs text-zinc-500">Path format: uploads/filename.png</div>
     </div>
 
     <div class="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
       <?php foreach ($rows as $m) { ?>
         <?php $url = ROOT_URL . '/uploads/' . e($m['file_name']); ?>
-        <div class="group overflow-hidden rounded-3xl bg-zinc-950/40 ring-1 ring-white/10">
+        <div class="group overflow-hidden rounded-3xl bg-zinc-50 ring-1 ring-black/10">
           <div class="relative aspect-[16/10] bg-gradient-to-br from-white/5 to-white/0">
             <img src="<?php echo $url; ?>" alt="" class="absolute inset-0 h-full w-full object-contain p-6 opacity-95">
-            <div class="absolute inset-x-0 bottom-0 flex items-center justify-between gap-2 bg-zinc-950/60 px-4 py-3 backdrop-blur">
+            <div class="absolute inset-x-0 bottom-0 flex items-center justify-between gap-2 bg-white/80 px-4 py-3 backdrop-blur">
               <div class="min-w-0">
-                <div class="truncate text-xs font-semibold text-white/85"><?php echo e($m['file_name']); ?></div>
-                <div class="mt-1 truncate text-[11px] text-white/50"><?php echo e($m['created_at']); ?></div>
+                <div class="truncate text-xs font-semibold text-zinc-800"><?php echo e($m['file_name']); ?></div>
+                <div class="mt-1 truncate text-xs text-zinc-500"><?php echo e($m['created_at']); ?></div>
               </div>
-              <button type="button" data-copy="uploads/<?php echo e($m['file_name']); ?>" class="rounded-xl bg-white/5 px-3 py-2 text-xs font-semibold text-white/80 ring-1 ring-white/10 transition hover:bg-white/10">Copy</button>
+              <button type="button" data-copy="uploads/<?php echo e($m['file_name']); ?>" class="rounded-xl bg-white px-3 py-2 text-xs font-semibold text-zinc-700 ring-1 ring-black/10 transition hover:bg-zinc-50">Copy</button>
             </div>
           </div>
           <div class="p-5">
@@ -123,8 +123,8 @@ require __DIR__ . '/includes/head.php';
               <input type="hidden" name="action" value="update">
               <input type="hidden" name="id" value="<?php echo (int)$m['id']; ?>">
               <div>
-                <label class="text-[11px] font-semibold text-white/60">Alt text</label>
-                <input name="alt_text" value="<?php echo e($m['alt_text']); ?>" class="mt-2 w-full rounded-2xl bg-zinc-950/50 px-4 py-3 text-sm text-white ring-1 ring-white/10 focus:outline-none focus:ring-2 focus:ring-brand-300" placeholder="Describe the image">
+                <label class="text-xs font-semibold text-zinc-500">Alt text</label>
+                <input name="alt_text" value="<?php echo e($m['alt_text']); ?>" class="mt-2 w-full rounded-2xl bg-white/50 px-4 py-3 text-sm text-zinc-900 ring-1 ring-black/10 focus:outline-none focus:ring-2 focus:ring-sky-300" placeholder="Describe the image">
               </div>
             </form>
             <div class="mt-3 flex items-center justify-between gap-2">
@@ -133,7 +133,7 @@ require __DIR__ . '/includes/head.php';
                 <input type="hidden" name="csrf" value="<?php echo e($csrf); ?>">
                 <input type="hidden" name="action" value="delete">
                 <input type="hidden" name="id" value="<?php echo (int)$m['id']; ?>">
-                <button class="rounded-full bg-rose-300/15 px-5 py-2.5 text-xs font-semibold text-rose-200 ring-1 ring-rose-300/20 transition hover:bg-rose-300/20">Delete</button>
+                <button class="rounded-full bg-rose-300/15 px-5 py-2.5 text-xs font-semibold text-rose-700 ring-1 ring-rose-300/20 transition hover:bg-rose-300/20">Delete</button>
               </form>
             </div>
           </div>
@@ -141,7 +141,7 @@ require __DIR__ . '/includes/head.php';
       <?php } ?>
 
       <?php if (!$rows) { ?>
-        <div class="rounded-3xl bg-zinc-950/40 p-8 text-sm text-white/60 ring-1 ring-white/10">No media yet. Upload your first asset above.</div>
+        <div class="rounded-3xl bg-zinc-50 p-8 text-sm text-zinc-500 ring-1 ring-black/10">No media yet. Upload your first asset above.</div>
       <?php } ?>
     </div>
   </div>

@@ -40,32 +40,32 @@ require __DIR__ . '/../includes/login-head.php';
 ?>
 <main class="mx-auto max-w-6xl px-5 pb-14 pt-14 md:pt-20">
   <div class="mx-auto max-w-md">
-    <div class="rounded-[2.5rem] bg-white/5 p-7 ring-1 ring-white/10 md:p-10">
+    <div class="rounded-[2.5rem] bg-white p-7 ring-1 ring-black/10 md:p-10">
       <div class="flex items-center gap-3">
-        <span class="grid h-12 w-12 place-items-center overflow-hidden rounded-2xl bg-white/10 ring-1 ring-white/15">
+        <span class="grid h-12 w-12 place-items-center overflow-hidden rounded-2xl bg-zinc-50 ring-1 ring-black/10">
           <img src="<?php echo url(''); ?>assets/images/logo.webp" alt="" class="h-8 w-8">
         </span>
         <div>
           <div class="text-sm font-semibold">Admin login</div>
-          <div class="mt-1 text-xs text-white/60"><?php echo e(setting('site_name', 'Corpsec')); ?></div>
+          <div class="mt-1 text-xs text-zinc-500"><?php echo e(setting('site_name', 'Corpsec')); ?></div>
         </div>
       </div>
 
       <form method="post" class="mt-7 grid gap-4">
         <input type="hidden" name="csrf" value="<?php echo e($csrf); ?>">
         <div>
-          <label class="text-xs font-semibold text-white/70">Username</label>
-          <input name="username" required class="mt-2 w-full rounded-2xl bg-zinc-950/40 px-4 py-3 text-sm text-white ring-1 ring-white/10 focus:outline-none focus:ring-2 focus:ring-brand-300" value="<?php echo e($_POST['username'] ?? ''); ?>">
+          <label class="text-xs font-semibold text-zinc-600">Username</label>
+          <input name="username" required class="mt-2 w-full rounded-2xl bg-zinc-50 px-4 py-3 text-sm text-zinc-900 ring-1 ring-black/10 focus:outline-none focus:ring-2 focus:ring-sky-300" value="<?php echo e($_POST['username'] ?? ''); ?>">
         </div>
         <div>
-          <label class="text-xs font-semibold text-white/70">Password</label>
-          <input type="password" name="password" required class="mt-2 w-full rounded-2xl bg-zinc-950/40 px-4 py-3 text-sm text-white ring-1 ring-white/10 focus:outline-none focus:ring-2 focus:ring-brand-300">
+          <label class="text-xs font-semibold text-zinc-600">Password</label>
+          <input type="password" name="password" required class="mt-2 w-full rounded-2xl bg-zinc-50 px-4 py-3 text-sm text-zinc-900 ring-1 ring-black/10 focus:outline-none focus:ring-2 focus:ring-sky-300">
         </div>
         <button type="submit" class="cursor-pointer mt-2 inline-flex items-center justify-center rounded-full bg-white px-5 py-3 text-sm font-semibold text-zinc-950 transition hover:-translate-y-0.5 hover:bg-white/90 active:translate-y-0">Sign in</button>
-        <a href="<?php echo url(''); ?>" class="text-center text-xs text-white/60 transition hover:text-white">Back to website</a>
+        <a href="<?php echo url(''); ?>" class="text-center text-xs text-zinc-500 transition hover:text-indigo-700">Back to website</a>
       </form>
     </div>
 
-    <div class="mt-4 text-center text-xs text-white/40">Default username: supreme_admin</div>
+    <div class="mt-4 text-center text-xs text-zinc-400">Default username: supreme_admin</div>
   </div>
 </main>
