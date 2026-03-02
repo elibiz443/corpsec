@@ -3485,6 +3485,11 @@
       margin-block: calc(var(--spacing) * 1);
     }
   }
+  .xl\:mt-5 {
+    @media (width >= 80rem) {
+      margin-top: calc(var(--spacing) * 5);
+    }
+  }
   .xl\:flex {
     @media (width >= 80rem) {
       display: flex;
@@ -3523,6 +3528,16 @@
   .xl\:h-18 {
     @media (width >= 80rem) {
       height: calc(var(--spacing) * 18);
+    }
+  }
+  .xl\:h-\[32rem\] {
+    @media (width >= 80rem) {
+      height: 32rem;
+    }
+  }
+  .xl\:h-\[34rem\] {
+    @media (width >= 80rem) {
+      height: 34rem;
     }
   }
   .xl\:h-full {
