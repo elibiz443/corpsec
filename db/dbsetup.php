@@ -165,9 +165,9 @@ function db_seed(PDO $pdo): void {
 
   $team = $pdo->prepare('INSERT INTO team (name, role_title, bio, photo, linkedin, sort_order, is_active) VALUES (?, ?, ?, ?, ?, ?, 1)');
   $teamRows = [
-    ['Moses Ojelle', 'Founder & Lead Investigator', 'Moses leads field operations with a focus on confidential investigations, evidence handling, and client communication. He brings a disciplined approach to case structuring, reporting, and risk guidance for corporate and private clients.', '', '', 10],
-    ['Peter Sitati', 'Operations & Guarding Coordinator', 'Peter oversees guarding deployments, post orders, and response readiness. He focuses on training discipline, on-site supervision, and clean reporting standards that keep clients informed and protected.', '', '', 20],
-    ['Irene Oyugah', 'Client Liaison & Case Support', 'Irene supports intake, coordination, and documentation for active cases. She ensures every engagement stays structured, timely, and aligned to client objectives and confidentiality standards.', '', '', 30]
+    ['Moses Ojelle', 'Chief Executive Officer', 'Moses Ojelle is a Certified Forensic Examiner, a Data Protection Professional, an Intellectual Property Rights Investigator, and a Brand Protection Specialist, with 15 years of experience in the fields of fraud prevention, asset protection, and covert investigations. He has an MSc in Peace Governance and Security Studies, a Bachelor\'s degree in Criminology and Security Studies, and a Higher Diploma in Forensic Psychology and Criminology.', '', '', 10],
+    ['Peter Sitati', 'Director, Investigations', 'Peter Sitati Matalanga, Is accomplished career Investigator and security specialist for over 25 years. An expert in security risk management, Forensic analysis, criminal profiling, corporate security, clandestine investigation, tracing and staking offenders, risk and fraud management. He has a Bachelor\'s degree in Criminology and Security studies and a diploma in Forensic psychology and investigation.', '', '', 20],
+    ['Irene Oyugah', 'Director, Communications and Brand', 'Irene Oyugah is a Communications and Public Relations Executive with over 10 years of experience, specializing in Brand protection and management, Communications, Marketing, Service Excellence, and Media. She has a degree in Mass Communication and Public Relations and a Certified Member of Chartered Institute of Marketing.', '', '', 30]
   ];
   foreach ($teamRows as $t) {
     $team->execute($t);

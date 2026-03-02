@@ -1796,6 +1796,9 @@
   .py-20 {
     padding-block: calc(var(--spacing) * 20);
   }
+  .py-30 {
+    padding-block: calc(var(--spacing) * 30);
+  }
   .pt-4 {
     padding-top: calc(var(--spacing) * 4);
   }
@@ -2208,11 +2211,23 @@
       --tw-shadow-color: color-mix(in oklab, var(--color-zinc-500) var(--tw-shadow-alpha), transparent);
     }
   }
+  .shadow-zinc-600 {
+    --tw-shadow-color: oklch(44.2% 0.017 285.786);
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-shadow-color: color-mix(in oklab, var(--color-zinc-600) var(--tw-shadow-alpha), transparent);
+    }
+  }
   .shadow-zinc-900 {
     --tw-shadow-color: oklch(21% 0.006 285.885);
     @supports (color: color-mix(in lab, red, red)) {
       --tw-shadow-color: color-mix(in oklab, var(--color-zinc-900) var(--tw-shadow-alpha), transparent);
     }
+  }
+  .ring-\[\#ec742c\]\/50 {
+    --tw-ring-color: color-mix(in oklab, #ec742c 50%, transparent);
+  }
+  .ring-\[\#ec742c\]\/60 {
+    --tw-ring-color: color-mix(in oklab, #ec742c 60%, transparent);
   }
   .ring-amber-200\/60 {
     --tw-ring-color: color-mix(in srgb, oklch(92.4% 0.12 95.746) 60%, transparent);
@@ -3480,6 +3495,26 @@
       height: calc(var(--spacing) * 2.5);
     }
   }
+  .xl\:h-3\.5 {
+    @media (width >= 80rem) {
+      height: calc(var(--spacing) * 3.5);
+    }
+  }
+  .xl\:h-4 {
+    @media (width >= 80rem) {
+      height: calc(var(--spacing) * 4);
+    }
+  }
+  .xl\:h-4\.5 {
+    @media (width >= 80rem) {
+      height: calc(var(--spacing) * 4.5);
+    }
+  }
+  .xl\:h-14 {
+    @media (width >= 80rem) {
+      height: calc(var(--spacing) * 14);
+    }
+  }
   .xl\:h-16 {
     @media (width >= 80rem) {
       height: calc(var(--spacing) * 16);
@@ -3498,6 +3533,26 @@
   .xl\:w-2\.5 {
     @media (width >= 80rem) {
       width: calc(var(--spacing) * 2.5);
+    }
+  }
+  .xl\:w-3\.5 {
+    @media (width >= 80rem) {
+      width: calc(var(--spacing) * 3.5);
+    }
+  }
+  .xl\:w-4 {
+    @media (width >= 80rem) {
+      width: calc(var(--spacing) * 4);
+    }
+  }
+  .xl\:w-4\.5 {
+    @media (width >= 80rem) {
+      width: calc(var(--spacing) * 4.5);
+    }
+  }
+  .xl\:w-14 {
+    @media (width >= 80rem) {
+      width: calc(var(--spacing) * 14);
     }
   }
   .xl\:w-16 {
