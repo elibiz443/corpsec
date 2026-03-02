@@ -13,6 +13,6 @@
   <?php require __DIR__ . '/sections/home/team.php'; ?>
   <?php require __DIR__ . '/sections/home/testimonials.php'; ?>
   <?php require __DIR__ . '/sections/home/blogs.php'; ?>
-  <?php require __DIR__ . '/sections/home/banner.php'; ?>
+  <?php require __DIR__ . '/sections/home/cta.php'; ?>
 </main>
 <?php require __DIR__ . '/includes/footer.php'; ?>
