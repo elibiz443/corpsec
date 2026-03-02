@@ -117,7 +117,7 @@ function db_seed(PDO $pdo): void {
     ['site_name', 'Corpsec Investigation & Guarding Services'],
     ['tagline', 'Quiet strength. Clear proof.'],
     ['phone', '+254 726 058358'],
-    ['email', 'info@corpsec.africa'],
+    ['email', 'info@corpsecinvestigations.com'],
     ['address', 'Nairobi, Kenya'],
     ['hero_kicker', 'Confidential • Evidence-led • Rapid response'],
     ['hero_title', 'Investigate. Protect. Secure.'],

@@ -57,5 +57,6 @@ $servicesShort = db_all($pdo, 'SELECT id, category, title FROM services WHERE is
 
 <script src="<?php echo url('assets/js/app.js'); ?>"></script>
 <script src="<?php echo url('assets/js/header.js'); ?>"></script>
+<script src="<?php echo url('assets/js/search.js'); ?>"></script>
 </body>
 </html>

@@ -3,54 +3,54 @@
     <div class="grid gap-8 lg:grid-cols-12 lg:items-start">
       <div class="lg:col-span-7 lg:pt-16">
         <div class="flex flex-wrap items-center gap-2">
-          <span class="inline-flex items-center gap-2 rounded-full bg-sky-50 px-3 py-1 text-xs font-semibold text-sky-700 ring-1 ring-sky-200/60">
+          <span class="inline-flex items-center gap-2 rounded-full bg-sky-50 px-3 py-1 text-xs xl:text-sm font-semibold text-sky-700 ring-1 ring-sky-200/60">
             <span class="h-1.5 w-1.5 rounded-full bg-sky-500"></span>
             <?php echo e(setting('hero_kicker', '')); ?>
           </span>
 
-          <span class="inline-flex items-center gap-2 rounded-full bg-orange-50 px-3 py-1 text-xs font-semibold text-orange-700 ring-1 ring-orange-200/60">
+          <span class="inline-flex items-center gap-2 rounded-full bg-orange-50 px-3 py-1 text-xs xl:text-sm font-semibold text-orange-700 ring-1 ring-orange-200/60">
             <span class="h-1.5 w-1.5 rounded-full bg-orange-500"></span>
             Confidential intake
           </span>
         </div>
 
         <h1 class="mt-6 font-['Sora',ui-sans-serif,system-ui] font-semibold leading-[1.05] tracking-tight">
-          <span class="text-3xl text-zinc-900 md:text-6xl">Confidential investigations.</span>
-          <span class="mt-3 block bg-gradient-to-r from-sky-600 via-indigo-600 to-orange-600 bg-clip-text text-2xl text-transparent md:text-3xl">
+          <span class="text-3xl text-zinc-900 md:text-6xl xl:text-7xl">Confidential investigations.</span>
+          <span class="mt-3 block bg-gradient-to-r from-sky-600 via-indigo-600 to-orange-600 bg-clip-text text-transparent text-2xl md:text-3xl xl:text-4xl">
             Elite guarding for modern risk.
           </span>
         </h1>
 
-        <p class="mt-5 max-w-2xl text-base leading-relaxed text-zinc-600 md:text-lg">
+        <p class="mt-5 max-w-2xl text-base leading-relaxed text-zinc-600 md:text-lg xl:text-xl">
           <?php echo e(setting('hero_subtitle', '')); ?>
         </p>
 
-        <div class="mt-7 flex flex-wrap gap-2">
-          <span class="inline-flex items-center rounded-full bg-sky-500/10 px-4 py-2 text-sm font-semibold text-sky-700 ring-1 ring-sky-200/60">Due diligence</span>
-          <span class="inline-flex items-center rounded-full bg-indigo-500/10 px-4 py-2 text-sm font-semibold text-indigo-700 ring-1 ring-indigo-200/60">Surveillance</span>
-          <span class="inline-flex items-center rounded-full bg-orange-500/10 px-4 py-2 text-sm font-semibold text-orange-700 ring-1 ring-orange-200/60">VIP escort</span>
-          <span class="inline-flex items-center rounded-full bg-sky-500/10 px-4 py-2 text-sm font-semibold text-sky-700 ring-1 ring-sky-200/60">Mobile patrol</span>
+        <div class="mt-7 flex flex-wrap gap-2 text-sm xl:text-md">
+          <span class="inline-flex items-center rounded-full bg-sky-500/10 px-4 py-2 font-semibold text-sky-700 ring-1 ring-sky-200/60">Due diligence</span>
+          <span class="inline-flex items-center rounded-full bg-indigo-500/10 px-4 py-2 font-semibold text-indigo-700 ring-1 ring-indigo-200/60">Surveillance</span>
+          <span class="inline-flex items-center rounded-full bg-orange-500/10 px-4 py-2 font-semibold text-orange-700 ring-1 ring-orange-200/60">VIP escort</span>
+          <span class="inline-flex items-center rounded-full bg-sky-500/10 px-4 py-2 font-semibold text-sky-700 ring-1 ring-sky-200/60">Mobile patrol</span>
         </div>
 
-        <div class="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
+        <div class="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center text-sm xl:text-md">
           <button
             type="button"
             data-open-request
-            class="cursor-pointer inline-flex items-center justify-center rounded-full bg-orange-500 px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-orange-600 active:translate-y-0"
+            class="cursor-pointer inline-flex items-center justify-center rounded-full bg-orange-500 px-6 py-3 font-semibold text-white transition hover:-translate-y-0.5 hover:bg-orange-600 active:translate-y-0"
           >
             Start request
           </button>
 
           <a
             href="#explorer"
-            class="inline-flex items-center justify-center rounded-full bg-sky-50 px-6 py-3 text-sm font-semibold text-sky-700 ring-1 ring-sky-200/60 transition hover:-translate-y-0.5 hover:bg-sky-100 active:translate-y-0"
+            class="inline-flex items-center justify-center rounded-full bg-sky-50 px-6 py-3 font-semibold text-sky-700 ring-1 ring-sky-200/60 transition hover:-translate-y-0.5 hover:bg-sky-100 active:translate-y-0"
           >
             Explore capabilities
           </a>
 
           <a
             href="<?php echo url('contact'); ?>"
-            class="inline-flex items-center justify-center rounded-full bg-indigo-50 px-6 py-3 text-sm font-semibold text-indigo-700 ring-1 ring-indigo-200/60 transition hover:-translate-y-0.5 hover:bg-indigo-100 active:translate-y-0"
+            class="inline-flex items-center justify-center rounded-full bg-indigo-50 px-6 py-3 font-semibold text-indigo-700 ring-1 ring-indigo-200/60 transition hover:-translate-y-0.5 hover:bg-indigo-100 active:translate-y-0"
           >
             Talk to a lead
           </a>
@@ -75,11 +75,11 @@
                 <div class="rounded-2xl bg-white/85 p-5 ring-1 ring-black/10 backdrop-blur">
                   <div class="flex items-center justify-between gap-3">
                     <div>
-                      <div class="text-sm font-semibold text-zinc-900">Operational readiness</div>
-                      <div class="mt-1 text-xs text-zinc-500">Intake → deploy → document → resolve</div>
+                      <div class="text-sm xl:text-md font-semibold text-zinc-900">Operational readiness</div>
+                      <div class="mt-1 text-xs xl:text-sm text-zinc-500">Intake → deploy → document → resolve</div>
                     </div>
 
-                    <span class="inline-flex items-center gap-1 rounded-full bg-sky-50 px-3 py-1 text-xs font-semibold text-sky-700 ring-1 ring-sky-200/60">
+                    <span class="inline-flex items-center gap-1 rounded-full bg-sky-50 px-3 py-1 text-xs xl:text-sm font-semibold text-sky-700 ring-1 ring-sky-200/60">
                       <span class="relative flex h-1.5 w-1.5">
                         <span class="absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75 animate-ping"></span>
                         <span class="relative inline-flex h-1.5 w-1.5 rounded-full bg-sky-400"></span>
@@ -88,27 +88,24 @@
                     </span>
                   </div>
 
-                  <div class="mt-4 grid grid-cols-3 gap-2">
+                  <div class="mt-4 grid grid-cols-3 gap-2 text-xs xl:text-sm">
                     <div class="rounded-xl bg-sky-500/10 p-3 ring-1 ring-sky-200/60">
-                      <div class="text-xs text-sky-700/70">Focus</div>
-                      <div class="mt-1 text-xs font-semibold text-zinc-900">Risk</div>
+                      <div class="text-sky-700/70">Focus</div>
+                      <div class="mt-1 font-semibold text-zinc-900">Risk</div>
                     </div>
 
                     <div class="rounded-xl bg-indigo-500/10 p-3 ring-1 ring-indigo-200/60">
-                      <div class="text-xs text-indigo-700/70">Evidence</div>
-                      <div class="mt-1 text-xs font-semibold text-zinc-900">Logs</div>
+                      <div class="text-indigo-700/70">Evidence</div>
+                      <div class="mt-1 font-semibold text-zinc-900">Logs</div>
                     </div>
 
                     <div class="rounded-xl bg-orange-500/10 p-3 ring-1 ring-orange-200/60">
-                      <div class="text-xs text-orange-700/70">Response</div>
-                      <div class="mt-1 text-xs font-semibold text-zinc-900">24/7</div>
+                      <div class="text-orange-700/70">Response</div>
+                      <div class="mt-1 font-semibold text-zinc-900">24/7</div>
                     </div>
                   </div>
 
-                  <a
-                    href="<?php echo ROOT_URL; ?>/services"
-                    class="cursor-pointer mt-4 inline-flex w-full items-center justify-center rounded-xl bg-indigo-500 px-4 py-2.5 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-indigo-600 active:translate-y-0"
-                  >
+                  <a href="<?php echo ROOT_URL; ?>/services" class="cursor-pointer mt-4 inline-flex w-full items-center justify-center rounded-xl bg-indigo-500 px-4 py-2.5 text-sm xl:text-md font-semibold text-white transition hover:-translate-y-0.5 hover:bg-indigo-600 active:translate-y-0">
                     View Our Services
                   </a>
                 </div>
