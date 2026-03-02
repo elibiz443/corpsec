@@ -62,7 +62,7 @@
     </nav>
 
     <div class="flex items-center gap-2 lg:w-[10rem] xl:w-[12rem]">
-      <form action="../search.php" method="GET" class="hidden md:flex items-center w-full ml-auto">
+      <form action="<?php echo ROOT_URL; ?>/search.php" method="GET" class="hidden md:flex items-center w-full ml-auto">
         <label for="mq" class="sr-only">Search</label>
 
         <div class="relative flex-1">
@@ -162,7 +162,7 @@
 
     <hr class="border-black/10 my-4">
 
-    <form action="../search.php" method="GET" class="flex items-center gap-2">
+    <form action="<?php echo ROOT_URL; ?>/search.php" method="GET" class="flex items-center gap-2">
       <label for="mq" class="sr-only">Search</label>
 
       <div class="relative flex-1">
