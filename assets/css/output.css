@@ -2229,6 +2229,12 @@
       --tw-shadow-color: color-mix(in oklab, var(--color-zinc-600) var(--tw-shadow-alpha), transparent);
     }
   }
+  .shadow-zinc-800 {
+    --tw-shadow-color: oklch(27.4% 0.006 286.033);
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-shadow-color: color-mix(in oklab, var(--color-zinc-800) var(--tw-shadow-alpha), transparent);
+    }
+  }
   .shadow-zinc-900 {
     --tw-shadow-color: oklch(21% 0.006 285.885);
     @supports (color: color-mix(in lab, red, red)) {
