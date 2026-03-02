@@ -16,7 +16,7 @@
   <div class="mt-8 grid gap-6 lg:grid-cols-12">
     <div class="lg:col-span-5">
       <img src="<?php echo ROOT_URL; ?>/assets/images/guard2.webp" alt="" class="relative z-10 w-[60%] h-auto mx-auto">
-      <div class="relative z-20 rounded-[2.5rem] bg-gradient-to-br from-white via-white to-sky-50/60 p-7 ring-1 ring-black/10">
+      <div class="relative z-20 rounded-[2.5rem] bg-gradient-to-br from-white via-white to-sky-50/60 p-7 ring-1 ring-black/10 shadow-xl shadow-zinc-400">
         <div class="text-sm xl:text-md font-semibold">How we work</div>
         <p class="mt-2 text-sm xl:text-md leading-relaxed text-zinc-600">Simple process. Strong discipline. No overcomplication.</p>
         <div class="mt-4 grid gap-3 text-sm xl:text-md">
@@ -62,7 +62,7 @@
 
     <div class="lg:col-span-7">
       <div class="grid gap-3">
-        <div class="rounded-[2.5rem] bg-gradient-to-br from-white via-white to-indigo-50/50 p-6 ring-1 ring-black/10" data-tabs>
+        <div class="rounded-[2.5rem] bg-gradient-to-br from-white via-white to-indigo-50/50 p-6 ring-1 ring-black/10 shadow-xl shadow-zinc-400" data-tabs>
           <div class="flex items-center justify-between gap-3">
             <div>
               <div class="text-sm xl:text-md font-semibold">Service console</div>
