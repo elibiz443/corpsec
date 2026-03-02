@@ -1033,6 +1033,9 @@
   .bg-\[\#66b0dc\] {
     background-color: #66b0dc;
   }
+  .bg-\[\#4149a3\] {
+    background-color: #4149a3;
+  }
   .bg-\[\#ec742c\] {
     background-color: #ec742c;
   }
@@ -1209,6 +1212,9 @@
   }
   .bg-zinc-100 {
     background-color: var(--color-zinc-100);
+  }
+  .bg-zinc-900 {
+    background-color: var(--color-zinc-900);
   }
   .bg-zinc-900\/30 {
     background-color: color-mix(in srgb, oklch(21% 0.006 285.885) 30%, transparent);
