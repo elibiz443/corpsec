@@ -1,5 +1,8 @@
-<section class="w-[90%] mx-auto pb-14 scroll-mt-[5.75rem]">
-  <div class="grid gap-3 md:grid-cols-4">
+<section class="relative w-[90%] mx-auto py-14 scroll-mt-[5.75rem] overflow-hidden">
+  <div class="absolute top-0 -left-[20rem] w-full h-full bg-[#ec742c]/80 rotate-[30deg]"></div>
+  <!-- <div class="absolute top-0 -right-[20rem] w-full h-full bg-[#1c3f60]/80 -rotate-[30deg]"></div> -->
+
+  <div class="relative z-10 grid gap-3 md:grid-cols-4 px-6">
     <?php
       $cards = [
         ['bg' => 'bg-gradient-to-br from-sky-50 via-white to-white', 'ring' => 'ring-sky-200/60', 'value' => 'text-sky-800'],
@@ -25,11 +28,11 @@
       }
     ?>
       <div data-reveal class="rounded-[2.25rem] <?php echo $card['bg']; ?> p-7 ring-1 <?php echo $card['ring']; ?>">
-        <div class="text-xs font-semibold text-zinc-600">
+        <div class="text-sm xl:text-lg font-semibold text-zinc-600">
           <?php echo e($st['label_text']); ?>
         </div>
 
-        <div class="mt-4 font-['Sora',ui-sans-serif,system-ui] text-4xl font-semibold tracking-tight <?php echo $card['value']; ?>">
+        <div class="mt-4 font-['Sora',ui-sans-serif,system-ui] text-4xl xl:text-5xl font-semibold tracking-tight <?php echo $card['value']; ?>">
           <?php if ($isNum) { ?>
             <span data-count-to="<?php echo e($num); ?>"><?php echo e($num); ?></span><?php echo e($suffix); ?>
           <?php } else { ?>
@@ -37,7 +40,7 @@
           <?php } ?>
         </div>
 
-        <div class="mt-2 text-xs text-zinc-500">Measured performance</div>
+        <div class="mt-2 text-xs xl:text-sm text-zinc-500">Measured performance</div>
       </div>
     <?php } ?>
   </div>
