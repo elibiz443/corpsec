@@ -80,9 +80,9 @@
                     </div>
 
                     <span class="inline-flex items-center gap-1 rounded-full bg-sky-50 px-3 py-1 text-xs xl:text-sm font-semibold text-sky-700 ring-1 ring-sky-200/60">
-                      <span class="relative flex h-1.5 w-1.5">
+                      <span class="relative flex h-1.5 w-1.5 xl:h-2.5 xl:w-2.5">
                         <span class="absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75 animate-ping"></span>
-                        <span class="relative inline-flex h-1.5 w-1.5 rounded-full bg-sky-400"></span>
+                        <span class="relative inline-flex h-1.5 w-1.5 xl:h-2.5 xl:w-2.5 rounded-full bg-sky-400"></span>
                       </span>
                       Active
                     </span>
