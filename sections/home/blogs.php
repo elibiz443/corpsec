@@ -16,7 +16,7 @@
     </a>
   </div>
 
-  <div class="mt-10 grid gap-6 md:grid-cols-3">
+  <div class="mt-10 grid gap-6 lg:grid-cols-3">
     <?php foreach ($posts as $p) { ?>
       <a data-reveal href="<?php echo url('post.php'); ?>?slug=<?php echo e($p['slug']); ?>" class="group flex flex-col overflow-hidden rounded-xl bg-white ring-1 ring-black/[0.05] shadow-lg shadow-zinc-200/50 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:ring-orange-200/50">
         
