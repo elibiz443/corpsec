@@ -1111,6 +1111,9 @@
   .bg-\[\#1c3f60\]\/60 {
     background-color: color-mix(in oklab, #1c3f60 60%, transparent);
   }
+  .bg-\[\#3a429d\] {
+    background-color: #3a429d;
+  }
   .bg-\[\#353a9a\] {
     background-color: #353a9a;
   }
@@ -3515,6 +3518,16 @@
       height: calc(var(--spacing) * 4.5);
     }
   }
+  .xl\:h-10 {
+    @media (width >= 80rem) {
+      height: calc(var(--spacing) * 10);
+    }
+  }
+  .xl\:h-12 {
+    @media (width >= 80rem) {
+      height: calc(var(--spacing) * 12);
+    }
+  }
   .xl\:h-14 {
     @media (width >= 80rem) {
       height: calc(var(--spacing) * 14);
@@ -3563,6 +3576,16 @@
   .xl\:w-4\.5 {
     @media (width >= 80rem) {
       width: calc(var(--spacing) * 4.5);
+    }
+  }
+  .xl\:w-10 {
+    @media (width >= 80rem) {
+      width: calc(var(--spacing) * 10);
+    }
+  }
+  .xl\:w-12 {
+    @media (width >= 80rem) {
+      width: calc(var(--spacing) * 12);
     }
   }
   .xl\:w-14 {
