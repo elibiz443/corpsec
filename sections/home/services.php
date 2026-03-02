@@ -104,7 +104,7 @@
                 <a data-reveal href="<?php echo url('guarding'); ?>#s<?php echo (int)$s['id']; ?>" class="group rounded-2xl bg-white px-4 py-3 ring-1 ring-black/10 transition hover:bg-sky-50">
                   <div class="flex items-center justify-between gap-3">
                     <div class="text-sm xl:text-md font-semibold text-zinc-900"><?php echo e($s['title']); ?></div>
-                    <span class="grid h-9 w-9 place-items-center rounded-xl bg-white ring-1 ring-black/10">
+                    <span class="grid h-9 w-9 place-items-center rounded-xl bg-[#ec742c] ring-1 ring-black/10">
                       <img src="<?php echo url($s['icon']); ?>" alt="" class="h-5 w-5 opacity-80">
                     </span>
                   </div>
