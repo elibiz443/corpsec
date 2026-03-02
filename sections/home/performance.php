@@ -1,6 +1,5 @@
 <section class="relative w-[90%] mx-auto py-14 scroll-mt-[5.75rem] overflow-hidden">
   <div class="absolute top-0 -left-[20rem] w-full h-full bg-[#ec742c]/80 rotate-[30deg]"></div>
-  <!-- <div class="absolute top-0 -right-[20rem] w-full h-full bg-[#1c3f60]/80 -rotate-[30deg]"></div> -->
 
   <div class="relative z-10 grid gap-3 md:grid-cols-4 px-6">
     <?php
