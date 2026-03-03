@@ -1,7 +1,7 @@
 <section class="w-[90%] mx-auto py-20 scroll-mt-[5.75rem]">
   <div class="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
     <div class="max-w-2xl">
-      <div class="inline-flex items-center gap-2 rounded-full bg-sky-50 px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-sky-700 ring-1 ring-sky-200/60">
+      <div class="inline-flex items-center gap-2 rounded-full bg-sky-50 px-3 py-1.5 text-xs xl:text-sm font-bold uppercase tracking-wider text-sky-700 ring-1 ring-sky-200/60">
         <span class="h-2 w-2 rounded-full bg-sky-500 shadow-[0_0_8px_rgba(14,165,233,0.5)]"></span>
         Insights
       </div>
@@ -25,7 +25,7 @@
           <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/80 via-zinc-950/20 to-transparent"></div>
           
           <div class="absolute bottom-4 left-6">
-            <span class="text-[10px] font-bold uppercase tracking-widest text-white/80">
+            <span class="text-xs font-bold uppercase tracking-widest text-white/80">
               <?php echo date('M d, Y', strtotime($p['created_at'] ?? 'now')); ?>
             </span>
           </div>
@@ -35,18 +35,18 @@
           <h3 class="font-['Sora',ui-sans-serif,system-ui] text-lg xl:text-xl font-bold leading-tight text-zinc-900 group-hover:text-indigo-600 transition-colors">
             <?php echo e($p['title']); ?>
           </h3>
-          <p class="mt-3 flex-1 text-sm xl:text-base leading-relaxed text-zinc-500 line-clamp-3">
+          <p class="mt-3 flex-1 text-sm xl:text-lg xl:text-base leading-relaxed text-zinc-500 line-clamp-3">
             <?php echo e($p['excerpt']); ?>
           </p>
           
           <div class="mt-6 flex items-center justify-between border-t border-zinc-50 pt-6">
-            <span class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-orange-600">
+            <span class="inline-flex items-center gap-2 text-xs xl:text-sm font-bold uppercase tracking-wider text-orange-600">
               Read Report
               <svg viewBox="0 0 24 24" class="h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M5 12h14" /><path d="M13 6l6 6-6 6" />
               </svg>
             </span>
-            <span class="rounded-full bg-zinc-100 px-3 py-1 text-[10px] font-bold text-zinc-500 group-hover:bg-orange-100 group-hover:text-orange-600 transition-colors">
+            <span class="rounded-full bg-zinc-100 px-3 py-1 text-xs font-bold text-zinc-500 group-hover:bg-orange-100 group-hover:text-orange-600 transition-colors">
               Operational
             </span>
           </div>

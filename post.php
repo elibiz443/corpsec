@@ -28,15 +28,15 @@ $recent = db_all($pdo, 'SELECT title, slug FROM posts WHERE is_published = 1 ORD
 require __DIR__ . '/includes/head.php';
 ?>
 <main>
-  <section class="mx-auto max-w-6xl px-5 pb-10 pt-14 md:pb-14 md:pt-20 scroll-mt-[5.75rem]">
+  <section class="w-[90%] mx-auto pb-10 pt-14 md:pb-14 md:pt-20 scroll-mt-[5.75rem]">
     <div class="grid gap-8 md:grid-cols-12 md:gap-10">
       <div class="md:col-span-8">
-        <a href="<?php echo url('blog.php'); ?>" class="inline-flex items-center gap-2 text-sm text-zinc-600 transition hover:text-indigo-700">
-          <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5" /><path d="M12 19l-7-7 7-7" /></svg>
+        <a href="<?php echo url('insights'); ?>" class="inline-flex items-center gap-2 text-sm text-zinc-600 transition hover:text-indigo-700">
+          <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5" /><path d="M12 19l-7-7 7-7" /></svg>
           Insights
         </a>
-        <h1 class="mt-6 font-['Sora',ui-sans-serif,system-ui] text-4xl font-semibold leading-[1.08] tracking-tight md:text-5xl"><?php echo e($post['title']); ?></h1>
-        <p class="mt-4 text-base leading-relaxed text-zinc-600"><?php echo e($post['excerpt']); ?></p>
+        <h1 class="mt-6 font-['Sora',ui-sans-serif,system-ui] text-4xl font-semibold leading-[1.08] tracking-tight md:text-5xl xl:text-6xl"><?php echo e($post['title']); ?></h1>
+        <p class="mt-4 leading-relaxed text-zinc-600 text-sm xl:text-lg"><?php echo e($post['excerpt']); ?></p>
       </div>
       <div class="md:col-span-4">
         <div class="overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-white via-white to-indigo-50/40 ring-1 ring-black/10">
@@ -45,16 +45,16 @@ require __DIR__ . '/includes/head.php';
             <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/70 via-zinc-950/10 to-transparent"></div>
           </div>
           <div class="p-6">
-            <div class="text-xs font-semibold text-zinc-500">Need support?</div>
-            <div class="mt-2 text-sm text-zinc-600">Request a consultation and we will respond quickly.</div>
-            <button type="button" data-open-request class="cursor-pointer mt-4 inline-flex w-full items-center justify-center rounded-2xl bg-orange-500 px-5 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-orange-600 active:translate-y-0">Request consultation</button>
+            <div class="text-xs xl:text-sm font-semibold text-zinc-500">Need support?</div>
+            <div class="mt-2 text-sm xl:text-lg text-zinc-600">Request a consultation and we will respond quickly.</div>
+            <button type="button" data-open-request class="cursor-pointer mt-4 inline-flex w-full items-center justify-center rounded-2xl bg-orange-500 px-5 py-3 text-sm xl:text-lg font-semibold text-white transition hover:-translate-y-0.5 hover:bg-orange-600 active:translate-y-0">Request consultation</button>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="mx-auto max-w-6xl px-5 pb-14 scroll-mt-[5.75rem]">
+  <section class="w-[90%] mx-auto pt-10 pb-32 scroll-mt-[5.75rem]">
     <div class="grid gap-8 md:grid-cols-12 md:gap-10">
       <div class="md:col-span-8">
         <article data-rich class="rounded-[2.5rem] bg-gradient-to-br from-white via-white to-sky-50/30 p-7 ring-1 ring-black/10 md:p-10">
@@ -63,10 +63,10 @@ require __DIR__ . '/includes/head.php';
       </div>
       <div class="md:col-span-4">
         <div class="rounded-[2.5rem] bg-gradient-to-br from-white via-white to-orange-50/25 p-7 ring-1 ring-black/10">
-          <div class="text-sm font-semibold">Recent posts</div>
+          <div class="text-sm xl:text-lg font-semibold">Recent posts</div>
           <div class="mt-4 grid gap-2">
             <?php foreach ($recent as $r) { ?>
-              <a class="rounded-2xl bg-sky-50 px-4 py-3 text-sm text-sky-700 ring-1 ring-sky-200/60 transition hover:bg-sky-100" href="<?php echo url('post.php'); ?>?slug=<?php echo e($r['slug']); ?>"><?php echo e($r['title']); ?></a>
+              <a class="rounded-2xl bg-sky-50 px-4 py-3 text-sm xl:text-lg text-sky-700 ring-1 ring-sky-200/60 transition hover:bg-sky-100" href="<?php echo url('post.php'); ?>?slug=<?php echo e($r['slug']); ?>"><?php echo e($r['title']); ?></a>
             <?php } ?>
           </div>
         </div>

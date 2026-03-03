@@ -22,7 +22,7 @@
   </div>
 </section>
 
-<section id="guarding" class="mx-auto max-w-6xl px-5 pb-30 scroll-mt-[5.75rem]">
+<section id="guarding" class="w-[90%] mx-auto pb-32 scroll-mt-[5.75rem]">
   <div class="flex items-end justify-between gap-4">
     <div>
       <h2 class="font-['Sora',ui-sans-serif,system-ui] text-2xl font-semibold tracking-tight md:text-3xl xl:text-4xl">Guarding services</h2>
