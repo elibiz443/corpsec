@@ -1,7 +1,7 @@
 <section class="w-[90%] mx-auto py-14 scroll-mt-[5.75rem]">
   <h2 class="font-['Sora',ui-sans-serif,system-ui] text-2xl font-semibold tracking-tight md:text-3xl xl:text-4xl">Core values</h2>
   <p class="mt-2 max-w-2xl text-sm xl:text-lg text-zinc-600">These values govern how we handle evidence, communications, and client trust.</p>
-  <div class="mt-6 grid gap-3 md:grid-cols-3">
+  <div class="mt-6 grid gap-3 lg:grid-cols-3">
     <?php foreach (preg_split("/\r?\n/", setting('values', '')) as $v) { if (trim($v) === '') continue; ?>
       <div data-reveal class="relative z-10 rounded-3xl bg-gradient-to-br from-white via-white to-sky-50/50 p-6 ring-1 ring-black/10 shadow-lg shadow-zinc-400">
         <div class="flex items-start justify-between gap-3">
@@ -28,7 +28,7 @@
     </div>
   </div>
 
-  <div class="mt-6 grid gap-3 md:grid-cols-3">
+  <div class="mt-6 grid gap-3 lg:grid-cols-3">
     <?php foreach ($team as $m) { ?>
       <div data-reveal class="rounded-3xl bg-gradient-to-br from-white via-white to-indigo-50/40 p-7 ring-1 ring-black/10 shadow-lg shadow-zinc-400">
         <div class="flex items-center gap-3">

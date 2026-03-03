@@ -27,7 +27,7 @@
             <div class="text-2xl xl:text-3xl font-bold text-zinc-900">Mission & vision</div>
             <div class="mt-1 text-base xl:text-lg text-zinc-500">A premium standard, consistently applied.</div>
           </div>
-          <img src="<?php echo url('assets/images/seal-verified.webp'); ?>" alt="Verified Seal" class="h-16 w-16 drop-shadow-md">
+          <img src="<?php echo url('assets/images/seal-verified.webp'); ?>" alt="Verified Seal" class="h-16 w-16 drop-shadow-md bg-zinc-800/80 p-2 rounded-xl">
         </div>
 
         <div class="mt-10 grid gap-6">

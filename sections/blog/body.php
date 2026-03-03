@@ -1,5 +1,5 @@
 <section class="w-[90%] mx-auto py-32 scroll-mt-[5.75rem]">
-  <div class="grid gap-3 md:grid-cols-3">
+  <div class="grid gap-3 lg:grid-cols-3">
     <?php foreach ($posts as $p) { ?>
       <a data-reveal href="<?php echo url('post.php'); ?>?slug=<?php echo e($p['slug']); ?>" class="group overflow-hidden rounded-3xl bg-gradient-to-br from-white via-white to-sky-50/40 ring-1 ring-black/10 transition hover:-translate-y-0.5 hover:bg-sky-50 shadow-xl shadow-zinc-600">
         <div class="relative h-44 overflow-hidden">

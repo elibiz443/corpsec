@@ -32,7 +32,7 @@
           <span class="inline-flex items-center rounded-full bg-sky-500/10 px-4 py-2 font-semibold text-sky-700 ring-1 ring-sky-200/60">Mobile patrol</span>
         </div>
 
-        <div class="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center text-sm xl:text-md">
+        <div class="mt-8 flex flex-col gap-2 xl:gap-3 md:flex-row md:items-center text-xs xl:text-sm">
           <button
             type="button"
             data-open-request

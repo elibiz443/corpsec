@@ -1,6 +1,6 @@
 <section class="w-[90%] mx-auto pt-14 pb-10 md:pb-14 md:pt-20 scroll-mt-[5.75rem]">
-  <div class="grid gap-8 md:grid-cols-12 md:gap-10">
-    <div class="md:col-span-6">
+  <div class="grid gap-8 lg:grid-cols-12 md:gap-10">
+    <div class="lg:col-span-6">
       <nav class="flex items-center gap-2 mb-6 text-[12px] font-bold uppercase tracking-[0.2em] text-zinc-400">
         <a href="<?php echo ROOT_URL; ?>" class="hover:text-sky-600 transition-colors">Home</a>
         <svg class="h-2 w-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" /></svg>
@@ -28,7 +28,7 @@
         </div>
       </div>
     </div>
-    <div class="md:col-span-6">
+    <div class="lg:col-span-6">
       <div class="relative overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-white via-white to-orange-50/30 ring-1 ring-black/10">
         <div class="p-8 md:p-10">
           <div class="flex items-center gap-3">
