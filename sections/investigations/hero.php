@@ -4,6 +4,8 @@
       <nav class="flex items-center gap-2 mb-6 text-[12px] font-bold uppercase tracking-[0.2em] text-zinc-400">
         <a href="<?php echo ROOT_URL; ?>" class="hover:text-sky-600 transition-colors">Home</a>
         <svg class="h-2 w-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" /></svg>
+        <a href="<?php echo ROOT_URL; ?>/services" class="hover:text-sky-600 transition-colors">Services</a>
+        <svg class="h-2 w-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" /></svg>
         <span class="text-zinc-600">Investigations Services</span>
       </nav>
 
