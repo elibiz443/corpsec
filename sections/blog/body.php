@@ -1,15 +1,15 @@
-<section class="mx-auto max-w-6xl px-5 pb-30 scroll-mt-[5.75rem]">
+<section class="w-[90%] mx-auto py-32 scroll-mt-[5.75rem]">
   <div class="grid gap-3 md:grid-cols-3">
     <?php foreach ($posts as $p) { ?>
-      <a data-reveal href="<?php echo url('post.php'); ?>?slug=<?php echo e($p['slug']); ?>" class="group overflow-hidden rounded-3xl bg-gradient-to-br from-white via-white to-sky-50/40 ring-1 ring-black/10 transition hover:-translate-y-0.5 hover:bg-sky-50">
+      <a data-reveal href="<?php echo url('post.php'); ?>?slug=<?php echo e($p['slug']); ?>" class="group overflow-hidden rounded-3xl bg-gradient-to-br from-white via-white to-sky-50/40 ring-1 ring-black/10 transition hover:-translate-y-0.5 hover:bg-sky-50 shadow-xl shadow-zinc-600">
         <div class="relative h-44 overflow-hidden">
           <img src="<?php echo url(e($p['cover'])); ?>" alt="" class="absolute inset-0 h-full w-full object-cover opacity-90">
           <div class="absolute inset-0 bg-gradient-to-t from-zinc-950/70 via-zinc-950/10 to-transparent"></div>
         </div>
         <div class="p-6">
-          <div class="text-sm font-semibold leading-snug"><?php echo e($p['title']); ?></div>
-          <div class="mt-2 text-xs leading-relaxed text-zinc-500"><?php echo e($p['excerpt']); ?></div>
-          <div class="mt-4 text-xs font-semibold text-zinc-600">Read</div>
+          <div class="text-sm xl:text-lg font-semibold leading-snug"><?php echo e($p['title']); ?></div>
+          <div class="mt-2 text-xs xl:text-sm leading-relaxed text-zinc-500"><?php echo e($p['excerpt']); ?></div>
+          <div class="mt-4 text-xs xl:text-sm font-semibold text-zinc-600">Read</div>
         </div>
       </a>
     <?php } ?>
